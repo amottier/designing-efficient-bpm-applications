@@ -1,0 +1,8 @@
+= Designing Efficient BPM Applications
+
+== Overview
+This page provide resources related to http://shop.oreilly.com/product/0636920039402.do[Designing Efficient BPM Applications] book.
+
+== Content index
+
+Content will be available when book is released.
