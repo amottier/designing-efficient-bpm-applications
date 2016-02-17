@@ -1,8 +1,70 @@
 = Designing Efficient BPM Applications
 
 == Overview
-This page provide resources related to http://shop.oreilly.com/product/0636920039402.do[Designing Efficient BPM Applications] book.
+You can find here resources related to http://shop.oreilly.com/product/0636920039402.do[Designing Efficient BPM Applications] book.
 
 == Content index
+Here is a list of available resources:
 
-Content will be available when book is released.
+* `applications`
+** `Application_Data.xml`: the definition of Tahiti vacation management application. Depends on: `page-ExampleVacationManagement.zip`.
+* `pages`
+** `page-ExampleVacationManagement.zip`: the Tahiti vacation management application page. Define the user interface of the application. Depends on: `rest-api-extension.zip`, vacation process definitions and Business Data Model (BDM).
+* `processes`: process definitions used by the application.
+** `Example-CancelVacationRequest-1.0.bos`: for user to cancel a vacation request.
+** `Example-InitiateVacationAvailable-1.0.bos`: to initiate the vacation available business data.
+** `Example-ModifyPendingVacationRequest-1.0.bos`: for user to modify a vacation request.
+** `Example-NewVacationRequest-1.0.bos`: for user to submit a new vacation request. Includes definition of Business Data Model (BDM) and a custom Groovy script to format date.
+** `Example-RemoveAllBusinessData-1.0.bos`: to drop all business data created by the processes.
+* `rest-api-extension`: REST API extension required by the application.
+** `rest-api-extension.zip`: a REST API extension to provide all information about employees for a manager. Depends on: vacation process definitions and Business Data Model (BDM).
+
+== How to use the solution
+=== Processes
+In order to import processes into your Bonita BPM Studio workspace:
+
+* Click on *Import* button in the Studio tool bar.
+* Click the *Browse...* button and select one of the `.bos` files.
+* Click on *Import* to confirm the import.
+
+NOTE: Importing processes will not conflict with the ones you create because diagram names are different. But if you run a process it will replace yours because process names are the same.
+
+WARNING: Importing `Example-NewVacationRequest-1.0.bos` will replace the Business Data Model (BDM) and `DateTimeScripts` Groovy script you defined.
+
+=== REST API extensions
+To deploy the `rest-api-extension.zip` in your Portal:
+
+* Click on *Portal* button in the Studio tool bar.
+* Switch to *Administrator* view using the drop down list in top right corner.
+* Click on *Resources* menu
+* Click on *Add* button
+* Click and browse your file system to select the `rest-api-extension.zip` file
+* Click *Next* button
+* Click *Confirm* button
+
+NOTE: The easiest way to test your REST API extension is to deploy a page and include it in an application.
+
+=== Pages
+To deploy the `page-ExampleVacationManagement.zip` in your Portal:
+
+* Click on *Portal* button in the Studio tool bar.
+* Switch to *Administrator* view using the drop down list in top right corner.
+* Click on *Resources* menu
+* Click on *Add* button
+* Click and browse your file system to select the `page-ExampleVacationManagement.zip` file
+* Click *Next* button
+* Click *Confirm* button
+
+NOTE: In order to access the page you need to include it in an application
+
+=== Applications
+To deploy the `Application_Data.xml` in your Portal:
+
+* Click on *Portal* button in the Studio tool bar.
+* Switch to *Administrator* view using the drop down list in top right corner.
+* Click on *Applications* menu
+* Click on *Import* button
+* Click and browse your file system to select the `Application_Data.xml` file
+* Click *Close* button
+
+You can now use the link to load the application.
