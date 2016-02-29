@@ -23,9 +23,9 @@ Here is a list of available resources:
 === Processes
 To import processes into your Bonita BPM Studio workspace:
 
-1. Click *Import* in the Studio tool bar. This opens a popup.
-1. Click *Browse...* in the popup and select one of the `.bos` files.
-1. Click *Import* to confirm the import.
+. Click *Import* in the Studio tool bar. This opens a popup.
+. Click *Browse...* in the popup and select one of the `.bos` files.
+. Click *Import* to confirm the import.
 
 NOTE: Importing these example processes will not conflict with the ones you create because diagram names are different. However, if you run a process it will replace yours because process names are the same.
 
@@ -34,37 +34,37 @@ WARNING: Importing `Example-NewVacationRequest-1.0.bos` will replace the Busines
 === REST API extension
 To deploy the `rest-api-extension.zip` in your Portal:
 
-1. Click *Portal* in the Studio tool bar.
-1. Switch to the *Administrator* profile using the drop-down list in top right corner.
-1. Click *Resources*. This opens the Resources view.
-1. Click *Add*. This opens a popup.
-1. Click and browse your file system to select the `rest-api-extension.zip` file.
-1. Click *Next*.
-1. Click *Confirm*.
+. Click *Portal* in the Studio tool bar.
+. Switch to the *Administrator* profile using the drop-down list in top right corner.
+. Click *Resources*. This opens the Resources view.
+. Click *Add*. This opens a popup.
+. Click and browse your file system to select the `rest-api-extension.zip` file.
+. Click *Next*.
+. Click *Confirm*.
 
 NOTE: The easiest way to test your REST API extension is to deploy a page and include it in an application.
 
 === Page
 To deploy the `page-ExampleVacationManagement.zip` in your Portal:
 
-1. Click *Portal* in the Studio tool bar.
-1. Switch to the *Administrator* profile using the drop-down list in top right corner.
-1. Click *Resources*. This opens the Resources view.
-1. Click *Add*. This opens a popup.
-1. Click and browse your file system to select the `page-ExampleVacationManagement.zip` file.
-1. Click *Next*.
-1. Click *Confirm*.
+. Click *Portal* in the Studio tool bar.
+. Switch to the *Administrator* profile using the drop-down list in top right corner.
+. Click *Resources*. This opens the Resources view.
+. Click *Add*. This opens a popup.
+. Click and browse your file system to select the `page-ExampleVacationManagement.zip` file.
+. Click *Next*.
+. Click *Confirm*.
 
 NOTE: To access the page you need to include it in an application.
 
 === Application
 To deploy the `Application_Data.xml` in your Portal:
 
-1. Click *Portal* in the Studio tool bar.
-1. Switch to the *Administrator* profile using the drop-down list in top right corner.
-1. Click *Applications*. This opens the Applications view.
-1. Click *Import*. This opens a popup.
-1. Click and browse your file system to select the `Application_Data.xml` file.
-1. Click *Close*.
+. Click *Portal* in the Studio tool bar.
+. Switch to the *Administrator* profile using the drop-down list in top right corner.
+. Click *Applications*. This opens the Applications view.
+. Click *Import*. This opens a popup.
+. Click and browse your file system to select the `Application_Data.xml` file.
+. Click *Close*.
 
 You can now use the link to load the application.
